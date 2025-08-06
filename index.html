@@ -1,0 +1,93 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+      <title>CRUD System</title>
+    </head>
+    <body>
+      <div class="container my-5 ">
+        <div class="row">
+          <div class="col-12  ">
+             <div class="text-center">
+            <h1 class=" half-bg">Bookmarker</h1>
+            </div>
+            <hr class="dotted-line w-100" />
+
+            <h3 class="text-center fs-6 mt-4">
+              <i class="fa-solid fa-bookmark color"></i>
+              <span class="color">Bookmark your</span>
+              <span class="color2">favorite sites</span>
+              <i class="fa-solid fa-bookmark color2"></i>
+            </h3>
+            <form class="my-5">
+              <label for="inputName" class="form-label fs-6 fw-bold"
+                ><i class="fa-solid fa-file-signature"></i> Site Name</label
+              >
+              <input
+                type="text"
+                id="inputName"
+                class="form-control w-100"
+                placeholder="Bookmark Name"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+     ("❌ Invalid name. It should start with a capital letter and be 3–9 characters long.");
+
+       </div>
+
+
+              <label for="inputUrl" class="form-label fs-6 fw-bold mt-4"
+                ><i class="fa-solid fa-link"></i> Site URL</label
+              >
+              <input
+                type="url"
+                id="inputUrl"
+                class="form-control w-100"
+                placeholder="Website URL"
+              />
+                        <div class="alert alert-danger d-none" role="alert">
+     ("❌ Invalid URL. It should start with http or https and be correctly formatted.");
+
+       </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger text-center mt-4 edit"   id="adding">Submit</button>
+              </div>
+              <hr class="dotted-line w-100 mt-4" />
+            </form>
+
+          </div>
+          </div>
+              <div class="table-responsive  ">
+                           <table  class="table mt-4 text-center bg-light text-center align-middle ">
+              <thead>
+                <tr>
+                  <th  class="text-capitalize">Index</th>
+                  <th class="text-capitalize">Website Name</th>
+                  <th class="text-capitalize">Visit</th>
+                  <th class="text-capitalize">Delete</th>
+                 
+
+                </tr>
+              </thead>
+              <tbody id="tableData" >
+                
+              </tbody>
+              </table>
+              </div>
+            
+            </div>
+          
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js" defer></script>
+    </body>
+  </html>
+</html>
+
+
+

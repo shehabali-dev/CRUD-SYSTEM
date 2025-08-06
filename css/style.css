@@ -1,0 +1,43 @@
+.dotted-line {
+  border: none;
+  border-top: 3px dotted #000; 
+  opacity: 1 !important;
+}
+body{
+    background-color: #f7ecde;
+}
+.color{
+    color: #58a757;
+}
+.color2{
+    color: #85a950;
+}
+.edit{
+      padding: 10px 50px;
+}
+h1{
+    font-family: "Pacifico", cursive;
+   
+
+  
+}
+h3{
+     font-family: "Righteous", sans-serif;
+      
+}
+.half-bg {
+  background: linear-gradient(to top, #fec260 100%, transparent 0%);
+       display: inline-block;
+ background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-size 0.5s ease;
+    
+}
+
+.half-bg:hover {
+       background-size: 100% 100%;
+}
+a{
+  text-decoration: none;
+}
